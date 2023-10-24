@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.webmanifest">
+    <title>Iniciar Sesión - Tu Plataforma de Profesores</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #3498db;
+            overflow: hidden;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            position: relative;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .logo-navbar {
+            background-color: #3498db;
+            overflow: hidden;
+        }
+
+        .logo-navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .logo-navbar li {
+            display: inline;
+            margin: 10px;
+        }
+
+        .logo-navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-background"></div>
+        <a href="index.html"> <!-- Agregar un enlace alrededor de la imagen del logo -->
+            <img src="imagenes/logo.png" alt="Tu Plataforma de Profesores Logo" class="logo">
+<nav class="logo-navbar">
+    <ul>
+        <li><a href="pagina_inicio.html">Inicio</a></li>
+        <li><a href="pagina_busqueda_profesor.html">Busco Profesor</a></li>
+        <li><a href="pagina_registro_profesor.html">Registro Profesor</a></li>
+        <li><a href="procesar_iniciarsesion.html">Iniciar sesión</a></li>
+        <li><a href="Fyq.html">Preguntas Frecuentes</a></li>
+    </ul>
+</nav>
+       
+        <h1>Iniciar Sesión</h1>
+        <p>Por favor, ingresa tus datos para iniciar sesión como profesor.</p>
+    </header>
+
+    <!-- Formulario de Inicio de Sesión para Profesores -->
+    <section class="formulario-inicio-sesion">
+        <h2>Ingresa tus Datos</h2>
+        <form id="inicio-sesion-form" action="procesar_inicio_sesion.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" name="localidad" required>
+
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" name="provincia" required>
+
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+
+            <label for="conocimientos">Conocimientos:</label>
+            <input type="text" id="conocimientos" name="conocimientos" required>
+
+            <label for="titulos">Títulos:</label>
+            <input type="text" id="titulos" name="titulos" required>
+
+            <label for="documento">Número de Documento:</label>
+            <input type="text" id="documento" name="documento" required>
+
+            <label for="telefono">Teléfono de Contacto:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2023 Tu Plataforma de Profesores</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

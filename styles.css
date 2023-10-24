@@ -1,0 +1,265 @@
+
+/* Estilos para el contenedor de los botones */
+.botones-inicio {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilos para el título y el eslogan */
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Estilos para la barra de búsqueda */
+#busqueda {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0; /* Añadido para eliminar el margen superior */
+}
+
+#busqueda::placeholder {
+    color: #777;
+}
+
+/* Estilos para el botón Buscar */
+form button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón "Registrarte" */
+#boton-registrarte {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Añadido para que sea un bloque */
+    margin: 15px auto; /* Añadido para centrar el botón */
+}
+
+/* Estilos para el botón del menú */
+.menu-button {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+/* Estilos para el menú (inicialmente oculto) */
+.menu {
+    background-color: #3498db;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 60px;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    transition: left 0.3s ease-in;
+    z-index: 1;
+}
+
+.menu ul {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Estilos para la sección de comentarios de estudiantes (y Profesores destacados) */
+.comentarios-estudiantes {
+    text-align: center;
+}
+
+/* Estilos para el título "Lo que Dicen Nuestros Estudiantes" (y Profesores destacados) */
+.comentarios-estudiantes h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de los comentarios (y Profesores destacados) */
+.comentarios-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los comentarios pasen a la siguiente línea si no caben en una fila */
+}
+
+/* Estilos para cada comentario individual (y Profesores destacados) */
+.comentario {
+    flex-basis: calc(30% - 20px); /* Ancho de cada comentario, con margen entre ellos */
+    padding: 15px;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las imágenes de los estudiantes (y Profesores destacados) */
+.comentario img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el nombre del estudiante (y Profesores destacados) */
+.comentario h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Estilos para el texto del comentario (y Profesores destacados) */
+.comentario p {
+    font-size: 18px;
+    background: rgba(89, 128, 226, 0.249);
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 0;
+}
+
+/* Estilos para el menú desplegable */
+.navbar {
+    background-color: #3498db;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    margin: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3498db;
+    min-width: 160px;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #2980b9;
+}
+
+.sugerencias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profesor {
+    width: calc(33.33% - 20px); /* Tamaño de cada caja (3 cajas en una fila) */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profesor a {
+    text-decoration: none;
+    color: #333;
+}
+
+.profesor img {
+    max-width: 100%;
+}
+
+/* Agrega estilos adicionales según tus preferencias */
+
+.filtros {
+    width: 20%; 
+    float: left;
+  }
+  
+  .profesores {
+    width: 80%;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  /* Estilos para las tarjetas */
+  
+  @media (max-width: 768px) {
+  
+    /* Mostrar en una columna para mobile */
+    
+    .filtros,
+    .profesores {
+       width: 100%;
+       float: none;
+    }
+    
+    .profesores {
+      grid-template-columns: 1fr;
+    }
+  
+  }
+
+
+

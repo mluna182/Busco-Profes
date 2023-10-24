@@ -1,0 +1,26 @@
+{
+    "name": "Busco Profes",
+"short_name": "Busco Profe",
+"display": "standalone",
+"themecolor":"#498db",
+"start_url": "/?marketing-id=2342",
+"scope": "/",
+"id":"/", 
+"icons": [
+{
+    "src": "imagenes/logo512.png",
+    "type": "image/png",
+"sizes": "512x512",
+"purpuse": "any"},
+{
+    "src": "imagenes/maskable_icon.png",
+    "type": "image/png",
+"sizes": "192x192",
+"purpuse": "maskable"
+}
+]
+
+
+
+
+}

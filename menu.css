@@ -1,0 +1,207 @@
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #1a1a1a;
+  color: #e60d0d;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #444;}
+  /* Estilos para el botón del menú */
+.menu-button {
+  background-color: #3498db;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+/* Estilos para el menú (inicialmente oculto) */
+.menu {
+  background-color: #3498db;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 60px;
+  left: -250px; /* Cambiado a -250px para ocultar el menú inicialmente */
+  width: 250px;
+  height: 100%;
+  transition: left 0.3s ease-in;
+  z-index: 1;
+}
+
+.menu ul {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+.menu .submenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+  list-style: none;
+}
+
+.menu .submenu li {
+  padding: 10px;
+}
+
+.menu .submenu li:hover {
+  background-color: #ddd;}
+
+  /* Estilos para los comentarios de estudiantes */
+.comentarios-estudiantes {
+  display: flex; /* Mostrar los comentarios en línea (uno al lado del otro) */
+  justify-content: space-between; /* Espacio entre los comentarios */
+  align-items: center; /* Alineación vertical en el centro */
+}
+
+.comentario {
+  text-align: center; /* Alineación del contenido al centro */
+  flex: 1; /* Distribuir el espacio disponible de manera uniforme */
+}
+
+.comentario img {
+  width: 100px; /* Ancho de las imágenes */
+  height: 100px; /* Altura de las imágenes */
+  border-radius: 50%; /* Forma circular para las imágenes */
+  margin: 0 auto 10px; /* Margen inferior para separar la imagen de la opinión */
+}
+
+.comentario p {
+  font-size: 18px; /* Tamaño del texto */
+}
+
+
+body {
+  padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+.header {
+  position: relative;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 150px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sugerencias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profesor {
+  width: calc(33.33% - 20px); /* Tamaño de cada caja (3 cajas en una fila) */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profesor a {
+  text-decoration: none;
+  color: #333;
+}
+
+.profesor img {
+  max-width: 100%;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .profesor {
+    /* estilos del profesor */
+  }
+
+
+/* Estilos para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+  .sugerencias {
+      flex-direction: column;
+  }
+
+  .profesor {
+      width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  }
+}

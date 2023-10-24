@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Completa tu perfil de profesor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Completa tu perfil de profesor</h1>
+    </header>
+    <section class="formulario-registro">
+        <form id="registro-profesor-form" action="procesar_registro_profesor.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br>
+            <label for="habilidades">Habilidades:</label>
+            <input type="text" id="habilidades" name="habilidades">
+            <br>
+            <label for="ubicacion">Zona:</label>
+            <input type="text" id="ubicacion" name="ubicacion">
+            <br>
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+            <br>
+            <input type="submit" value="Guardar Perfil">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Profesor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="pagina_inicio.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="pagina_busqueda_profesor.html" class="dropbtn">Busco Profesor</a>
+                  </li>
+            <li><a href="pagina_registro_profesor.html">Registro Profesor</a></li>
+            <li><a href="procesar_iniciarsesion.html">Iniciar sesión</a></li>
+            <li><a href="Fyq.html">Preguntas Frecuentes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="formulario-registro">
+            <h2>Completa tu perfil de profesor</h2>
+            <form id="registro-profesor-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <br>
+                <label for="habilidades">Habilidades:</label>
+                <input type="text" id="habilidades" name="habilidades">
+                <br>
+                <label for="ubicacion">Zona:</label>
+                <input type="text" id="ubicacion" name="ubicacion">
+                <br>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+                <br>
+                <button type="submit">Guardar Perfil</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tu Plataforma de Profesores</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
